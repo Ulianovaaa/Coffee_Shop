@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RegisterFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="32dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/e_mail" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_bg"
+            app:cardCornerRadius="20dp"
+            >
+            <EditText
+                android:id="@+id/emailET_ger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@color/white"                android:inputType="textEmailAddress"
+                android:hint="@string/mail_example_com" />
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/password" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_bg"
+            app:cardCornerRadius="20dp"
+            >
+            <EditText
+                android:id="@+id/password_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@color/white"                android:inputType="textPassword" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/repeat_password" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_bg"
+            app:cardCornerRadius="20dp"
+            >
+            <EditText
+                android:id="@+id/rep_password_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@color/white"                android:inputType="textPassword" />
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/logInBtn"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/beige"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/register" />
+
+    </LinearLayout>
+
+</FrameLayout>
